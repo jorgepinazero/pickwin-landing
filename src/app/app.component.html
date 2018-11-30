@@ -1,0 +1,21 @@
+<img [src]="pickwinlogoBCO" class="logo">
+
+<div class="container-menu">
+  <div class="container-fluid">
+    <div class="center"><br><h2>¿QUÉ DEPORTE TE GUSTA?</h2><br></div>
+    <div class="row">
+      <div class="col-2 col-sm2 offset-1 offset-sm-1 center"><button class="btn btn-lg button-green" routerLink="/">LIGA MX</button></div>
+      <div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/nfl">NFL</button></div>
+      <div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/nba">NBA</button></div>
+      <div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/mlb">MLB</button></div>
+      <div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/champions">CHAMPIONS LEAGUE</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="container-big">
+  <div class="sign"><img class="logo-white" [src]="pickwinlogowhite"></div>
+  <div class="big-place">
+      <router-outlet></router-outlet>
+  </div>
+</div>
