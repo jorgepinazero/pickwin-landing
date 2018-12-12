@@ -10,6 +10,11 @@ import { NflComponent } from './nfl/nfl.component';
 import { NbaComponent } from './nba/nba.component';
 import { MlbComponent } from './mlb/mlb.component';
 import { ChampionsLeagueComponent } from './champions-league/champions-league.component';
+import { PicksLigamxComponent } from './liga-mx/picks-ligamx/picks-ligamx.component';
+import { RegisterModalComponent } from './register-modal/register-modal.component';
+import { RegisterModalContentComponent } from './register-modal/register-modal-content/register-modal-content.component';
+import { LoginModalComponent } from './login-modal/login-modal.component';
+import { LoginModalContentComponent } from './login-modal/login-modal-content/login-modal-content.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { ChampionsLeagueComponent } from './champions-league/champions-league.co
     NflComponent,
     NbaComponent,
     MlbComponent,
-    ChampionsLeagueComponent
+    ChampionsLeagueComponent,
+    PicksLigamxComponent,
+    RegisterModalComponent,
+    RegisterModalContentComponent,
+    LoginModalComponent,
+    LoginModalContentComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +37,10 @@ import { ChampionsLeagueComponent } from './champions-league/champions-league.co
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    RegisterModalComponent,
+    LoginModalComponent
+  ]
 })
 export class AppModule { }

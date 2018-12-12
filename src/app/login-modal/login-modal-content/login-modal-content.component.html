@@ -1,0 +1,31 @@
+<div class="modal-header">
+  <h4 class="modal-title">INGRESAR</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span class="close-button" aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <form>
+    <div class="row">
+      <div class="col-12">
+        <input type="text" class="form-control" placeholder="Email o Apodo" id="UserInput">
+        <span class="fas fa-exclamation-triangle danger"></span><span class="danger">&nbsp;Tu nick no puede estar vacío</span>
+      </div>
+      <div class="col-12">
+        <input type="password" class="form-control" placeholder="Contraseña" id="PasswordInput">
+        <span class="fas fa-exclamation-triangle danger"></span><span class="danger">&nbsp;La contraseña no puede estar vacía</span>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-block button-green" ><i class="fas fa-sign-in-alt"></i> ENTRAR</button>
+        <button class="btn btn-block button-blue" ><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;INGRESA CON FACEBOOK</button>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-6">
+        <button class="btn btn-block button-dark">¿OLVIDASTE TU CONTRASEÑA?</button>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-6">
+        <button class="btn btn-block button-dark" (click)="openRegister()">REGÍSTRATE</button>
+      </div>
+    </div>
+  </form>
+</div>

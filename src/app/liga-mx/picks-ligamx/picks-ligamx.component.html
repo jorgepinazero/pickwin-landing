@@ -1,0 +1,115 @@
+<div class="picks">
+
+  <div class="mis-picks">
+    <img [src]="quinielasIconBco"class="i-mis-picks"> &nbsp;&nbsp; MIS PICKS
+  </div>
+
+  <div class="status-quiniela-container">
+    <div class="status-quiniela">
+      Estatus:<br>
+      <span class="status-quiniela-alert-font">Pendiente</span>
+    </div>
+    <div class="status-quiniela">
+      Picks Guardados:<br>
+      <span class="status-quiniela-alert-font">0 / 20</span>
+    </div>
+    <div class="status-quiniela">
+      Desempates:<br>
+      <span class="status-quiniela-alert-font">Pendiente</span>
+    </div>
+  </div>
+
+
+  <div class="gradient-dark-container no-padding">PARTIDOS</div>
+
+  <div id="partidoswithfor" class="container-fluid">
+    <div class="row pick-category-header-container">
+      <div class="col-4 pick-category-header1">LOCAL</div>
+      <div class="col-2 pick-category-header1">EMPATE</div>
+      <div class="col-4 pick-category-header1">VISITANTE</div>
+      <div class="col-2 pick-category-header1">CIERRE</div>
+    </div>
+
+    <div class="row matchbkg" *ngFor="let match of matches; index as i">
+      <div [class]="pl0" [ngClass]="{'pick-selected': booleanA === false}" (click)="onClickLocal0()">
+        <label class="local1">
+          <input type="radio" name="{{i}}">
+          <span class="checkmark"></span>
+          <span class="content-local1"><img [src]="match.localImg" class="i-teams">{{match.localName}}</span>
+        </label>
+      </div>
+      <div [class]="pt0"  [ngClass]="{'pick-selected': booleanB === false}" (click)="onClickTie0()">
+        <label class="tie1">
+          <input type="radio" name="{{i}}">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div [class]="pv0" [ngClass]="{'pick-selected': booleanC === false}" (click)="onClickVisitor0()">
+        <label class="visitor1">
+          <span class="content-local1">{{match.visitorName}}<img [src]="match.visitorImg" class="i-teams"></span>
+          <input type="radio" name="{{i}}">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="col-2 pick-category1 closure1">{{match.date}}<br>{{match.hour}}</div>
+    </div>
+
+  </div>
+
+  <div class="gradient-dark-container">PROPS</div>
+
+  <div class="container-fluid" *ngFor="let prop of props">
+    <div class="num-goles-title">
+      {{prop.title}}
+    </div>
+    <div class="row">
+
+      <div class="col-4 num-goles-column no-padding">
+        <label [ngClass]="nGLL0" (click)="onClickMinorLeft0()">
+          <input type="radio" name="goles1">
+          <span class="checkmark"></span>
+          <span class="content">{{prop.left}}</span>
+        </label>
+      </div>
+
+      <div class="col-4 num-goles-column-mid">{{prop.middle}}</div>
+
+      <div class="col-4 num-goles-column no-padding">
+        <label [ngClass]="nGLR0" (click)="onClickMinorRight0()">
+          <span>{{prop.right}}</span>
+          <input type="radio" name="goles1">
+          <span class="checkmark"></span>
+          <span style="width:1px;"></span>
+        </label>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="gradient-dark-container">DESEMPATES</div>
+
+  <div class="container-fluid">
+    <div class="row desempates">
+      <div class="col-5 offset-1" style="padding:.1rem;">
+        Número de goles en los partidos de la quiniela
+        <ng-template #tipContent>Recuerda, no tienes que elegir el número exacto, si resulta empate el que se acerque más al resultado será el ganador</ng-template>
+        <button type="button" class="button-transparent fas fa-question-circle" placement="right" [ngbTooltip]="tipContent">
+        </button>
+      </div>
+      <div class="col-5">
+        <select style="width:100%;">
+          <option *ngFor="let option of optionPick">{{option}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 button-container">
+        <button type="button" class="btn btn-block button-green" (click)="openRegister()"><img [src]="savePick" style="width:1rem;padding-top:-.5rem;">&nbsp;&nbsp;GUARDA TUS PICKS</button>
+      </div>
+    </div>
+  </div>
+
+</div>

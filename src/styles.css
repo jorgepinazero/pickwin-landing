@@ -14,3 +14,31 @@ body{
   font-family: 'Lato', sans-serif;
   color: white;
 }
+
+.modal-content{
+  border:0 !important;
+  border-radius:0 !important;
+}
+
+.modal-dialog{
+  box-shadow: 0px 0px 15px 8px rgba(255, 255, 255, 0.45);
+}
+
+@media screen and (max-width: 691px) {
+  .modal-dialog {
+    max-width: 95% !important;
+    margin: 1.75rem auto;
+  }
+}
+
+@media screen and (min-width: 692px) {
+  .modal-dialog {
+    max-width: 70% !important;
+    margin: 1.75rem auto;
+  }
+}
+
+.tooltip-inner{
+  max-width:260px !important;
+  font-size:.75rem;
+}

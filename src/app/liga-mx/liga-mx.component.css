@@ -1,4 +1,33 @@
-p{
-  font-family: 'Lato', sans-serif;
+.no-padding{
+  padding:0;
+}
+
+.prize-steps-container{
+  padding:.3rem .5rem;
+  background-color:#262626;
+}
+.prize-steps-step{
+  margin-top:1.5rem;
   color:white;
+}
+.prize-steps-step-borderb{
+  margin-top:.5rem;
+  border-bottom:.3rem solid #78b529;
+  color:white;
+}
+.prize-steps-step ~ h4{
+  font-weight:bold;
+}
+.prize-steps-step ~ p{
+  line-height: .1rem;
+}
+.prize-info{
+  text-align: center;
+  color:white;
+}
+.prize-title{
+  color:#FFD711;
+  font-size:4rem;
+  font-weight: bolder;
+  font-style: italic;
 }

@@ -1,0 +1,86 @@
+<div class="modal-header">
+  <h4 class="modal-title">REGISTRO</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span class="close-button" aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <img class="pickwin-logo" [src]="pickwinlogo">
+  <p class="title1">Llena el formulario para poder jugar con otros pickwineros</p>
+  <p class="title2">Asegurate que tu nombre y apellidos sean correctos e iguales a los de tu identificación, te los pediremos al momento de hacer un retiro.</p>
+
+  <form>
+    <div class="form-row">
+      <div class="col-12 col-md-6">
+        <label for="NameInput">NOMBRE</label>
+        <input type="text" class="form-control" id="NameInput">
+        <span class="fas fa-exclamation-triangle warningspan"></span>
+      </div>
+      <div class="col-12 col-md-6">
+        <label for="LastNameInput" class="second-column">APELLIDOS</label>
+        <input type="text" class="form-control" id="LastNameInput">
+        <span class="fas fa-exclamation-triangle warningspan"></span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-12 col-md-6">
+        <label for="EmailInput">MAIL</label>
+        <input type="email" class="form-control" id="EmailInput">
+        <span class="fas fa-exclamation-triangle warningspan"></span>
+      </div>
+      <div class="col-12 col-md-6">
+        <label for="NickNameInput" class="second-column">APODO</label>
+        <input type="text" class="form-control" id="NickNameInput">
+        <span class="fas fa-exclamation-triangle warningspan"></span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-12 col-sm-12 col-md-6">
+        <label for="PasswordInput">CONTRASEÑA</label>
+        <input type="password" class="form-control" id="PasswordInput">
+        <span class="fas fa-exclamation-triangle warningspan"></span>
+        <div class="password">Tu contraseña debe de tener al menos 6 caracteres.</div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6">
+        <div class="second-column">
+          <label for="ConfirmPasswordInput">CONFIRMAR CONTRASEÑA</label>
+          <input type="password" class="form-control" id="ConfirmPasswordInput">
+          <span class="fas fa-exclamation-triangle warningspan"></span>
+          <div class="password">Confirma tu contraseña</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <br>
+      <label class="label2" for="InvitedBy">
+        ¿QUIÉN TE INVITÓ? <span class="danger">&nbsp;&nbsp;[Opcional]</span>
+      </label>
+      <input type="text" class="form-control" id="InvitedBy">
+      <div class="invited-by">Escribe el nick o el código amigo de quien te invitó.</div>
+    </div>
+
+    <div class="form-group">
+      <div class="form-check form-check-top">
+        <input class="form-check-input" type="checkbox" value="" id="terms">
+        <label class="label-checkout" for="terms">Acepto términos y condiciones</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="age">
+        <label class="label-checkout" for="age">Certifico que tengo al menos 18 años de edad</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" checked="checked" id="newsletter">
+        <label class="label-checkout" for="newsletter">Acepto que Pickwin me envíe avisos y comunicados por correo electrónico</label>
+      </div>
+    </div>
+
+    <button class="btn btn-block button-green" >COMPLETA TU REGISTRO</button>
+    <button class="btn btn-block button-blue" ><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;REGÍSTRATE CON FACEBOOK</button>
+
+
+  </form>
+</div>
+

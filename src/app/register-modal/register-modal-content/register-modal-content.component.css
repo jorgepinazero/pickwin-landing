@@ -1,0 +1,149 @@
+.modal-header{
+  background-image: linear-gradient(#526823, rgba(120,181,41,1));
+  color: white;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom:0 !important;
+  padding:.5rem !important;
+  box-sizing: border-box;
+}
+.modal-body{
+  background-color: black !important;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.close-button{
+  color:white;
+}
+
+.close{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter !important;
+  font-size: 2rem !important;
+  opacity: .5;
+  color: white;
+}
+
+.close:hover{
+  color:white;
+  opacity:1;
+}
+
+.modal-header .close {
+  padding: 1rem;
+  margin: -1rem 2.5rem -1rem auto;
+}
+
+h4{
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+.pickwin-logo{
+  width:10.62rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title1{
+  margin-top:1.25rem;
+  color:white;
+  text-align: center;
+}
+
+.title2{
+  margin-top:.4rem;
+  color: rgb(249, 204, 48);
+  text-align: center;
+}
+
+form{
+  margin-top: 1rem;
+}
+
+.form-row{
+  margin-top:1.2rem;
+}
+
+.second-column{
+  margin-top:0rem;
+}
+
+@media (max-width: 767.98px) {
+  .second-column{
+    margin-top:1.2rem;
+  }
+}
+
+label{
+  color: rgb(249, 204, 48);
+  font-weight: bold;
+  margin-bottom: .25rem;
+  font-size:.9rem;
+}
+input:focus{
+  box-shadow:0px 0px 15px 6px rgba(204, 255, 51, .45);
+  border:0 !important;
+}
+
+.warningspan{
+  float: right;
+  margin-right: 1rem;
+  margin-top: -1.9rem;
+  position: relative;
+  font-size:1.2rem;
+  z-index: 2;
+  color:#f9cc30;
+}
+
+.form-control{
+  border-radius:0 !important;
+}
+
+.password{
+  color:#8a6d3b;
+  font-size:.9rem;
+  margin-top:.3rem;
+}
+
+.danger{
+  color:red;
+  font-size:.75rem;
+}
+.invited-by{
+  color:#737373;
+  font-size:.9rem;
+  margin-top:.3rem;
+}
+
+.form-check-top{
+  margin-top:1.5rem;
+}
+
+.label-checkout{
+  color:white;
+  font-weight: bold;
+  margin-left:3rem;
+}
+
+.button-green{
+  background-color: #78bc28;
+  box-shadow: inset -4px -4px 13px 0 rgba(60,60,60,.4), inset 7px 4px 13px 0 hsla(0,0%,100%,.4);
+  color: white;
+}
+
+.button-green:hover {
+  background-image: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2));
+}
+
+.button-blue {
+  background-color: #3b5998;
+  box-shadow: inset -4px -4px 13px 0 rgba(60,60,60,.4), inset 7px 4px 13px 0 hsla(0,0%,100%,.4);
+  color: white;
+}
+
+.button-blue:hover {
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+}

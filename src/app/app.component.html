@@ -1,21 +1,81 @@
 <img [src]="pickwinlogoBCO" class="logo">
 
+<!--<div class="container-menu">-->
+  <!--<div class="container-fluid">-->
+    <!--<div class="center"><br><h2>¿QUÉ DEPORTE TE GUSTA?</h2><br></div>-->
+    <!--<div class="row">-->
+      <!--<div class="col-2 col-sm2 offset-1 offset-sm-1 center"><button class="btn btn-lg button-green" routerLink="/">LIGA MX</button></div>-->
+      <!--<div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/nfl">NFL</button></div>-->
+      <!--<div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/nba">NBA</button></div>-->
+      <!--<div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/mlb">MLB</button></div>-->
+      <!--<div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/champions">CHAMPIONS LEAGUE</button></div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+<!--<br>-->
+
 <div class="container-menu">
-  <div class="container-fluid">
-    <div class="center"><br><h2>¿QUÉ DEPORTE TE GUSTA?</h2><br></div>
+  <div class="container-fluid" style="padding:1rem;">
     <div class="row">
-      <div class="col-2 col-sm2 offset-1 offset-sm-1 center"><button class="btn btn-lg button-green" routerLink="/">LIGA MX</button></div>
-      <div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/nfl">NFL</button></div>
-      <div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/nba">NBA</button></div>
-      <div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/mlb">MLB</button></div>
-      <div class="col-2 col-sm2 center"><button class="btn btn-lg button-green" routerLink="/champions">CHAMPIONS LEAGUE</button></div>
+      <div class="col-12 col-xl-4 choose-sport-title">
+        <h4>¿QUÉ DEPORTE TE GUSTA?</h4>
+      </div>
+      <div class="col-12 col-xl-8 d-none d-xl-block d-lg-block d-md-block choose-sport" style="padding:0;">
+        <div style="width:100%;" class="d-flex justify-content-around">
+          <button class="btn btn-success btn-height" routerLink="/">LIGA MX</button>
+          <button class="btn btn-success btn-height" routerLink="/nfl">NFL</button>
+          <button class="btn btn-success btn-height" routerLink="/nba">NBA</button>
+          <button class="btn btn-success btn-height" routerLink="/mlb">MLB</button>
+          <button class="btn btn-success btn-height" routerLink="/champions">CHAMPIONS LEAGUE</button>
+        </div>
+      </div>
+      <div class="col-12 d-block d-xl-none d-lg-none d-md-none">
+        <button class="btn btn-success btn-block" routerLink="/">LIGA MX</button>
+        <button class="btn btn-success btn-block" routerLink="/nfl">NFL</button>
+        <button class="btn btn-success btn-block" routerLink="/nba">NBA</button>
+        <button class="btn btn-success btn-block" routerLink="/mlb">MLB</button>
+        <button class="btn btn-success btn-block" routerLink="/champions">CHAMPIONS LEAGUE</button>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container-big">
-  <div class="sign"><img class="logo-white" [src]="pickwinlogowhite"></div>
-  <div class="big-place">
-      <router-outlet></router-outlet>
+<!--<div class="container-big">-->
+  <!--<div class="sign d-none d-xl-block d-lg-block d-md-block"><img class="logo-white" [src]="pickwinlogowhite"></div>-->
+  <!--<div class="d-block d-xl-none d-lg-none d-md-none"><br></div>-->
+  <!--<div class="big-place">-->
+      <!--<router-outlet></router-outlet>-->
+  <!--</div>-->
+<!--</div>-->
+<br>
+<div class="container-title-small d-block d-xl-none d-lg-none">
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-3 pick-title-small-borderb no-padding">
+        <p class="pick-title-small">LLENA</p>
+        <p class="pick-title-small-sub">TU QUINIELA</p>
+      </div>
+      <div class="col-3 no-padding">
+        <p class="pick-title-small">GUARDA</p>
+        <p class="pick-title-small-sub">TU QUINIELA</p>
+      </div>
+      <div class="col-3 no-padding">
+        <p class="pick-title-small">CREA</p>
+        <p class="pick-title-small-sub">TU CUENTA</p>
+      </div>
+      <div class="col-3 no-padding">
+        <p class="pick-title-small">PAGA</p>
+        <p class="pick-title-small-sub">LA QUINIELA</p>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="sign d-none d-xl-block d-lg-block"><img class="logo-white" [src]="pickwinlogowhite"></div>
+<div class="d-block d-xl-none d-lg-none"><br></div>
+<div class="big-box">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 no-padding"><router-outlet></router-outlet></div>
+    </div>
+  </div>
